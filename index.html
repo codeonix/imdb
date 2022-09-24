@@ -10,6 +10,20 @@
 
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		
+		
+	<style>
+	#searchInput {
+	background-color: pink;
+        background-image: url('/css/searchicon.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 25%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
 	</head>
 
 	<body>
@@ -65,6 +79,8 @@
 		</header>
 
 		<section class="catalogue">
+			<input type="text" id="searchInput" onkeyup="search()" placeholder="Search for movies.." title="Type in a name">
+
 			<nav class="catalogue-menu">
 				<div class="container">
 					<ul class="catalogue-menu-list">
